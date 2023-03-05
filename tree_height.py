@@ -63,6 +63,6 @@ def main():
             height = compute_height(n, parents)
             print(int(height))
 
-sys.setrecursionlimit(10 ** 7)  # max depth of recursion
-threading.stack_size(2 ** 27)  # new thread will get stack of such size
+sys.setrecursionlimit(10 ** 7)
+threading.stack_size(2 ** 27)
 threading.Thread(target=main).start()
